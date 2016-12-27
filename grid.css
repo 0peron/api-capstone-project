@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.wrapper::before,
+.wrapper::after {
+    display: table;
+    content: '';
+}
+
+.wrapper::after {
+    clear: both;
+}
+
+.container {
+    width: 50%;
+}
+
+.albumList,
+.lyrics {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+
+.albumList,
+.lyrics {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .albumList,
+    .lyrics {
+        width: 100%;
+    }
+    html {
+        height: auto;
+        width: auto;
+    }
+}

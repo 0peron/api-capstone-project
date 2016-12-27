@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lyrics Finder</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <section class='container'>
+            <h1>DeadTone Lyrics</h1>
+            <h2>Find lyrics to all your favorite songs</h2>
+            <form action="#" class="js-search-form">
+                <label for="query"></label>
+                <input type="text" class="js-query" placeholder="Artist or Song title">
+                <div>
+                    <select name="drop" id="js-drop" class=dropDown>
+                        <option value="artist">Artist</option>
+                        <option value="song">Song Title</option>
+                    </select>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <div class='albumList' id='js-artist-list'>
+            <p>Artist name with all albums and tracks on albums go here</p>
+            <h2>ARTIST NAME</h2>
+            <div class=albums>
+                <ul>
+                    <li>
+                        <h2>Album name</h2>
+                        <p>track 1</p>
+                        <p>track 2</p>
+                        <p>track 3</p>
+                    </li>
+
+                    <li>
+                        <h2>Album name</h2>
+                        <p>track 1</p>
+                        <p>track 2</p>
+                        <p>track 3</p>
+                    </li>
+
+                    <li>
+                        <h2>Album name</h2>
+                        <p>track 1</p>
+                        <p>track 2</p>
+                        <p>track 3</p>
+                    </li>
+
+                    <li>
+                        <h2>Album name</h2>
+                        <p>track 1</p>
+                        <p>track 2</p>
+                        <p>track 3</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class='lyrics' id="js-lyrics">
+            <p>Artist name album, song title, lyrics go here</p>
+            <h2>Arist Name</h2>
+            <h3>Album</h3>
+            <h3>song title</h3>
+            <p>lyrics</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="apps.js"></script>
+</body>
+
+</html>
