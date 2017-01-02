@@ -35,13 +35,14 @@ html {
 }
 
 .container > h1 {
-    font-size: 35px;
-    padding: 5px;
+    font-size: 40px;
+    padding: 10px;
 }
 
 .container > h2 {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .js-query {
@@ -72,13 +73,13 @@ button:hover {
     margin-bottom: 5%;
     text-align: center;
     padding: 20px;
-    background-color: white;
+    background-color: seashell;
+/*    color: white;*/
 }
 
 .albumList p {
-    text-align: left;
-    margin: 20px;
-    line-height: normal;
+    margin: 15px;
+    font-size: 15px;
 }
 
 .albums {
@@ -95,6 +96,11 @@ button:hover {
     font-size: 15px;
     display: inline-block;
     width: 30%;
+    margin-bottom: 10px;
+}
+
+.albums h2 {
+    font-size: 17px;
 }
 
 .lyrics {
@@ -135,7 +141,7 @@ body {
 .modal {
     width: 500px;
     height: auto;
-    line-height: 200px;
+    line-height: normal;
     position: fixed;
     top: 30%;
     left: 50%;
@@ -146,6 +152,7 @@ body {
     text-align: center;
     z-index: 11;
     display: none;
+    text-align: left;
     /* 1px higher than the overlay layer */
 }
 

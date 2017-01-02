@@ -2,19 +2,17 @@
 $(document).ready(function () {
     $('.overlay').hide();
     $('.modal').hide();
+    $('.albumList').hide();
     // step 1 define functions
     // a) get input from user
     $('.js-search-form').submit(function (event) {
+        $('.albumList').show();
         event.preventDefault();
 
         var songTitle = $('.js-query').val();
         console.log(songTitle);
         getDataApi(songTitle);
     });
-    //    $(".albums").on('click', '.mod', function () {
-    //        $('.overlay').show();
-    //        $('.modal').show();
-    //    });
     $('.overlay').on('click', function () {
         $('.overlay').hide();
         $('.modal').hide();
@@ -50,7 +48,6 @@ $(document).ready(function () {
             data: "",
             dataType: 'json',
             success: function (lyricData) {
-                //console.log(lyricData.lyrics_body);
                 displayLyrics(lyricData.lyrics_body, trackId);
             },
 
@@ -84,7 +81,6 @@ $(document).ready(function () {
     }
 
     function displayLyrics(lyricData, trackId) {
-        //        console.log(lyricData);
         var addHTML = "";
         var hidelyricsClickFunction = '$("#' + trackId + ', .overlay").hide()';
 
@@ -94,16 +90,6 @@ $(document).ready(function () {
         addHTML += "<div class='modal' id='" + trackId + "' onclick='" + hidelyricsClickFunction + "'>";
         addHTML += "<p>" + niceOutput + "</p>";
         addHTML += "</div>";
-
-        //        var addHTML = lyricData;
-        //        $.each(lyricData, function (lyricArrayKey, lyricArrayValue) {
-        //            addHTML += "<li>";
-        //            addHTML += "<h2>" + lyricArrayValue.artist_name + "</h2>";
-        //            addHTML += "<p>" + lyricArrayValue.album_name + "</p>";
-        //            addHTML += "<p>" + lyricArrayValue.lyrics_body + "</p>";
-        //            addHTML += "<p>" + lyricArray.track_name + "</p>";
-        //            addHTML += "</li>";
-        //        });
         $('.modal_wrapper').append(addHTML);
     }
 });
