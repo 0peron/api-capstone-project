@@ -14,13 +14,7 @@
             <h2>Find lyrics to all your favorite songs</h2>
             <form action="#" class="js-search-form">
                 <label for="query"></label>
-                <input type="text" class="js-query" placeholder="Artist or Song title">
-                <div>
-                    <select name="drop" id="js-drop" class=dropDown>
-                        <option value="artist">Artist</option>
-                        <option value="song">Song Title</option>
-                    </select>
-                </div>
+                <input type="text" class="js-query" placeholder="Song title" value="drive">
                 <button type="submit">Search</button>
             </form>
         </section>
@@ -29,11 +23,11 @@
             <h2>ARTIST NAME</h2>
             <div class=albums>
                 <ul>
+                    <!--
                     <li>
+                        <img src="" alt="">
                         <h2>Album name</h2>
-                        <p>track 1</p>
-                        <p>track 2</p>
-                        <p>track 3</p>
+
                     </li>
 
                     <li>
@@ -56,21 +50,19 @@
                         <p>track 2</p>
                         <p>track 3</p>
                     </li>
+-->
 
                 </ul>
             </div>
-        </div>
-        <div class='lyrics' id="js-lyrics">
-            <p>Artist name album, song title, lyrics go here</p>
-            <h2>Arist Name</h2>
-            <h3>Album</h3>
-            <h3>song title</h3>
-            <p>lyrics</p>
+            <div class="modal_wrapper"></div>
         </div>
     </div>
+    <div class="overlay"></div>
+
 
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="apps.js"></script>
+
+    <script src="apptest.js"></script>
 </body>
 
 </html>
