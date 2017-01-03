@@ -50,17 +50,12 @@ html {
     border: 1px solid grey;
 }
 
-.dropDown {
-    margin-bottom: 10px;
-    border: 1px solid grey;
-}
-
 button {
     display: inline-block;
     border: 1px solid white;
     padding 20px;
     font-size: 18px;
-    background-color: gold;
+    background-color: #f1c40f;
     width: 30%;
 }
 
@@ -74,7 +69,6 @@ button:hover {
     text-align: center;
     padding: 20px;
     background-color: seashell;
-/*    color: white;*/
 }
 
 .albumList p {
@@ -143,17 +137,20 @@ body {
     height: auto;
     line-height: normal;
     position: fixed;
-    top: 30%;
-    left: 50%;
+    top: 25%;
+    left: 46%;
     margin-top: -100px;
     margin-left: -150px;
     background-color: #f1c40f;
     border-radius: 5px;
-    text-align: center;
     z-index: 11;
     display: none;
     text-align: left;
     /* 1px higher than the overlay layer */
+}
+
+.modal p {
+    font-size: 18px;
 }
 
 .mod:hover {
@@ -167,5 +164,8 @@ body {
     .albumList,
     .lyrics {
         background-color: rgba(255, 255, 255, 0.7);
+    }
+    html {
+        background-size: auto;
     }
 }
