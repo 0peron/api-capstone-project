@@ -8,7 +8,6 @@ $(document).ready(function () {
     $('.js-search-form').submit(function (event) {
         $('.albumList').show();
         event.preventDefault();
-
         var songTitle = $('.js-query').val();
         console.log(songTitle);
         getDataApi(songTitle);
@@ -30,7 +29,6 @@ $(document).ready(function () {
                 console.log(songData);
                 displaySearch(songData);
             },
-
             error: function (err) {
                 console.log(err);
             },
@@ -68,11 +66,10 @@ $(document).ready(function () {
         $.each(songData, function (songArrayKey, songArrayValue) {
             console.log(getLyrics(songArrayValue.track_id));
             var getlyricsClickFunction = '$("#' + songArrayValue.track_id + ', .overlay").show()';
-            addHTML += "<li>";
+            addHTML += "<li class='mod' onclick='" + getlyricsClickFunction + "'>";
             addHTML += "<h2>" + songArrayValue.artist_name + "</h2>";
             addHTML += "<p>" + songArrayValue.album_name + "</p>";
-            addHTML += "<img src='" + songArrayValue.album_coverart_100x100 + "'/>";
-            addHTML += "<p class='mod' onclick='" + getlyricsClickFunction + "'>" + songArrayValue.track_name + "</p>";
+            addHTML += "<p>" + songArrayValue.track_name + "</p>";
             addHTML += "</li>";
         });
         $('.albums ul').html(addHTML);
@@ -84,7 +81,6 @@ $(document).ready(function () {
         var hidelyricsClickFunction = '$("#' + trackId + ', .overlay").hide()';
 
 
-        //        var niceOutput = lyricData.replace(/([\n])\w+/g, "<br />");
         var niceOutput = lyricData.replace(/\n/g, "<br />");
 
         addHTML += "<div class='modal' id='" + trackId + "' onclick='" + hidelyricsClickFunction + "'>";
