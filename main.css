@@ -96,7 +96,7 @@ button:hover {
     -moz-box-shadow: 4px 4px 1px -1px rgba(173, 173, 173, 1);
     box-shadow: 4px 4px 1px -1px rgba(173, 173, 173, 1);
     cursor: pointer;
-    height: 150px;
+    border: 1px solid lightgrey;
     vertical-align: top;
 }
 
