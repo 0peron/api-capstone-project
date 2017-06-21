@@ -98,6 +98,7 @@ button:hover {
     cursor: pointer;
     border: 1px solid lightgrey;
     vertical-align: top;
+    height: 150px;
 }
 
 .albums li:active {
