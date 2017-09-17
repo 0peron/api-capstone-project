@@ -18,7 +18,7 @@
 html {
     background-image: url(headphones.jpg);
     background-size: cover;
-    background-position: -65px 0%;
+    background-position: -55px 0%;
     background-attachment: fixed;
 }
 
@@ -179,7 +179,8 @@ body {
     .lyrics {
         background-color: rgba(255, 255, 255, 0.7);
     }
-    html {
-        background-size: auto;
+    .albums li {
+        width: 100%;
     }
+
 }
