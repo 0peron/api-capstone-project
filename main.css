@@ -20,6 +20,7 @@ html {
     background-size: cover;
     background-position: -55px 0%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -189,6 +190,11 @@ body {
     button {
         width: 50%;
         margin-top: 4px;
+    }
+
+    html {
+        background-size: 320%;
+        background-position: -55px 120px;
     }
 
 
