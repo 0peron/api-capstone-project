@@ -182,5 +182,14 @@ body {
     .albums li {
         width: 100%;
     }
+    .js-query {
+        width:100%;
+    }
+
+    button {
+        width: 50%;
+        margin-top: 4px;
+    }
+
 
 }
