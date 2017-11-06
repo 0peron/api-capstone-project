@@ -24,7 +24,7 @@ html {
 }
 
 .wrapper {
-    border: 1px solid black;
+    border: 1px solid grey;
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -65,11 +65,11 @@ button:hover {
 }
 
 .albumList {
-    border: 1px solid black;
+    border: 1px solid grey;
     margin-bottom: 5%;
     text-align: center;
     padding: 20px;
-    background-color: seashell;
+    background-color: ghostwhite;
 }
 
 .albumList p {
@@ -113,7 +113,7 @@ button:hover {
 }
 
 .lyrics {
-    border: 1px solid black;
+    border: 1px solid grey;
     margin-bottom: 5%;
     text-align: center;
     padding: 20px;
@@ -169,7 +169,7 @@ body {
 }
 
 .mod:hover {
-    color: lightskyblue;
+    color: firebrick;
 }
 
 @media only screen and (max-width: 800px) {
@@ -178,7 +178,7 @@ body {
     }
     .albumList,
     .lyrics {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.95);
     }
     .albums li {
         width: 100%;
@@ -193,7 +193,7 @@ body {
     }
 
     html {
-        background-size: 320%;
+        background-size: 300%;
         background-position: -55px 120px;
     }
 
